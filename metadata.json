@@ -1,0 +1,11 @@
+{
+    "entry": "index.js",
+    "requires": [
+<<<<<<< HEAD
+        "PogData",
+        "FontLib"
+=======
+        "PogData"
+>>>>>>> 096c39e (trimonu i4 legit)
+    ]
+}
