@@ -1,6 +1,6 @@
 https://discord.gg/nVGgn3Jnjh
 
-annexing all my code to quit
+opensourcing all my code to quit
 
 will make gui, just edit data.js for now
 
