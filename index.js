@@ -22,9 +22,6 @@ import "./modules/VertChine";
 import "./modules/MastiffWish";
 import "./modules/NoRemoveCobble";
 import "./modules/ExcavatorMacro";
-<<<<<<< HEAD
-import "./modules/MiningBot";
-=======
 import "./modules/MiningBot";
 import "./modules/legiti4";
 
@@ -37,4 +34,3 @@ register('command', (x, y, z) => {
 
     r.startRotation(new net.minecraft.util.Vec3(xCoord, yCoord, zCoord))
 }).setName('looktowards')
->>>>>>> 096c39e (trimonu i4 legit)

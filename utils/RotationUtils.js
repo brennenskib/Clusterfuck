@@ -33,8 +33,6 @@ class Rotations {
         return this.working;
     }
 
-<<<<<<< HEAD
-=======
     getHalfRange(number) {
         let half = number / 2;
         
@@ -48,7 +46,6 @@ class Rotations {
     }
 
 
->>>>>>> 096c39e (trimonu i4 legit)
     startRotation(vec, then) {
         if(!vec) return;
         if (
@@ -58,39 +55,6 @@ class Rotations {
         ) {
             if(this.working) return;
             new Thread(() => {
-<<<<<<< HEAD
-                    this.working = true;
-                    let eyes = Player.getPlayer().func_174824_e(1)
-
-                    let deltaX = vec?.field_72450_a - eyes?.field_72450_a;
-                    let deltaY = vec?.field_72448_b - eyes?.field_72448_b;
-                    let deltaZ = vec?.field_72449_c - eyes?.field_72449_c;
-
-                    let dist = Math.sqrt(deltaX * deltaX + deltaZ * deltaZ)
-                    let pitch = -Math.atan2(dist, deltaY)
-                    let yaw = Math.atan2(deltaZ, deltaX)
-
-                    pitch = this.wrap180(((pitch * 180.0) / Math.PI + 90.0) * - 1.0 - Player.getPlayer().field_70125_A)
-                    yaw = this.wrap180((yaw * 180.0) / Math.PI - 90.0 - Player.getPlayer().field_70177_z)
-
-                    for (i = 0; i < this.velocity; i++) {
-                        if(!this.working) return;
-
-                        Player.getPlayer().field_70177_z = Player.getPlayer().field_70177_z + (yaw / this.velocity)
-                        Player.getPlayer().field_70125_A =  Player.getPlayer().field_70125_A + (pitch / this.velocity)
-                        Thread.sleep(1)
-                    }
-
-                    this.working = false;
-                    
-                    if(then) then();
-                    else return;
-            }).start()
-        }
-    }
-}
-
-=======
                 if(Math.random() > 0.5) {
                     this.working = true;
 
@@ -168,9 +132,4 @@ class Rotations {
     }
 }
 
-register('renderOverlay', () => {
-    Renderer.drawString(`${Math.round(Player.getX())}, ${Math.round(Player.getY())}, ${Math.round(Player.getZ())}`, 50, 50, true)
-})
-
->>>>>>> 096c39e (trimonu i4 legit)
 global.clusterfuck.rot = Rotations
